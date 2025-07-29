@@ -1,0 +1,116 @@
+.window-dialog-wrapper {
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 1000;
+    -webkit-box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -ms-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+    transition: opacity 100ms;
+    overflow: hidden;
+}
+
+.window-dialog-wrapper.full-screen {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.window-dialog-wrapper.adjustment {
+    opacity: 0.95;
+}
+
+.window-dialog-wrapper .window-dialog-container {
+    width: 100%;
+    height: 100%;
+}
+
+.window-dialog-wrapper .window-dialog-title-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.window-dialog-wrapper .window-dialog-title {
+    padding: 6px 10px;
+    color: #383838;
+    width: 0;
+    flex: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.window-dialog-wrapper .title-btn-group {
+    border-top-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    overflow: hidden;
+}
+
+.window-dialog-wrapper .title-btn-item {
+    padding: 6px 8px;
+    cursor: pointer;
+    color: #595959;
+}
+
+.window-dialog-wrapper .title-btn-item:hover {
+    background-color: #f8f8f8;
+}
+
+.window-dialog-wrapper .title-btn-item.danger:hover {
+    color: #73030a;
+    background-color: #ff5f57;
+}
+
+.window-dialog-wrapper .title-btn-item.disabled {
+    color: #c0c0c0 !important;
+    background-color: #efefef !important;
+    cursor: not-allowed !important;
+}
+
+.window-dialog-wrapper .window-dialog-body-container {
+    overflow: hidden;
+    flex: auto;
+}
+
+.window-dialog-wrapper .window-dialog-resize-bar {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    width: 10px;
+    height: 10px;
+    cursor: nwse-resize;
+    padding: 0 5px 5px 0;
+}
+
+.window-dialog-split-screen-placeholder {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.window-dialog-split-screen-placeholder::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fcfcfc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: rgba(130, 134, 138, 0.2) 0 2px 8px 0, inset rgba(149, 157, 165, 0.16) 0 10px 36px 0;
+}
