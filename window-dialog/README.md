@@ -3,6 +3,9 @@
 #### 说明
 这是一个在浏览器中模拟windows弹窗的dialog组件，需要在vue3中进行使用，支持拖拽、调整大小、分屏、最大化、最小化、关闭、隐藏最大化、隐藏最小化等功能。
 
+#### 示例
+[window-dialog-examples.mov](../examples/window-dialog-examples.mov)
+
 #### 使用方式
 ```javascript
 import WindowDialogComponents from "@/components/window-dialog/window-dialog-components.vue";
